@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+/* navbar section*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    background-color: rgb(28, 123, 152);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 30px 40px;
+    color: white;
+}
+
+.menu ul li:hover {
+    color: black;
+    cursor: pointer;
+    height: 30px;
+}
+
+.icons {
+    color: white;
+    padding: 12px;
+    display: block;
+    cursor: pointer;
+}
+
+/* home section*/
+.home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/back.jpg') no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+@media (max-width: 480px) {
+    .home::before {
+        width: 30%;
+    }
+}
+
+.home h1 {
+    text-align: center;
+    padding-top: 350px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(28, 123, 152);
+    font-size: 50px;
+}
+
+.home p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(28, 123, 152);
+    margin: 15px auto;
+    display: block;
+    font-size: 15px;
+    color: white;
+    font-family: 'Baloo Thambi 2', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* services section */
+.services {
+    background-color: rgb(250, 245, 239);
+    margin: 100px auto;
+    display: block;
+}
+
+.services h1 {
+    padding-top: 60px;
+    padding-left: 570px;
+    font-size: 40px;
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+@media (max-width: 840px) {
+    .services h1 {
+        display: block;
+    }
+}
+
+@media (max-width: 840px) {
+    .services h1 {
+        display: none;
+    }
+}
+
+.services .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.dabba img {
+    width: 310px;
+    height: 350px;
+    padding: 8px 15px;
+    margin: 23px;
+    display: block;
+    border-radius: 60px;
+}
+
+@media (max-width: 840px) {
+    .dabba img {
+        display: block;
+    }
+}
+
+@media (max-width: 840px) {
+    .dabba img {
+        display: none;
+    }
+}
+
+.dabba h2 {
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(205, 69, 91);
+    border: 2px black solid;
+    padding: auto;
+}
+
+@media (min-width: 840px) {
+    .dabba h2 {
+        border: none;
+    }
+}
+
+@media (max-width: 840px) {
+    .dabba h2 {
+        border: block;
+    }
+}
+
+.dabba p {
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+}
+
+/* casuality section */
+.casuality {
+    background-color: #fce2fe;
+}
+
+.casuality h1 {
+    padding-top: 50px;
+    padding-left: 570px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(205, 69, 91);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+@media (max-width: 840px) {
+    .casuality h1 {
+        display: block;
+    }
+}
+
+@media (max-width: 840px) {
+    .casuality h1 {
+        display: none;
+    }
+}
+
+.casuality .bishesh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bakas img {
+    width: 300px;
+    height: 350px;
+    padding: 8px 15px;
+    margin: 23px;
+    display: block;
+    border-radius: 60px;
+}
+
+@media (max-width: 840px) {
+    .bakas img {
+        display: block;
+    }
+}
+
+@media (max-width: 840px) {
+    .bakas img {
+        display: none;
+    }
+}
+
+.bakas h2 {
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+    color: rgb(28, 123, 152);
+}
+
+.bakas p {
+    color: rgb(205, 69, 91);
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+}
+
+/* banner section */
+.banner {
+    padding-top: 70px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    opacity: 0.89;
+    background: url('../img/bann.jpg') center center/cover;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 90%;
+    padding-top: 200px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.banner h1 {
+    text-align: left;
+    padding-top: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 123, 152);
+    text-shadow: 5px 5px 5px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+    font-size: 100px;
+    padding-left: 110px;
+    font-weight: bold;
+}
+
+.banner p {
+    text-align: left;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace color:white;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+    font-size: 50px;
+    padding-left: 110px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* appo section */
+.appo::before {
+    content: "";
+    position: absolute;
+    opacity: 0.89;
+    background: url('../img/pink.jpg') center center/cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.appo {
+    padding-top: 300px;
+}
+
+.appo h1 {
+    font-size: 45px;
+    padding-left: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+}
+
+@media (max-width: 840px) {
+    .appo h1 {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 840px) {
+    .appo h1 {
+        display: block;
+    }
+}
+
+.form {
+    border: 5px solid rgb(205, 69, 91);
+    color: rgb(28, 123, 152);
+    border-radius: 15px;
+    text-align: left;
+    height: 600px;
+    width: 600px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+@media (min-height: 600px) {
+    .form {
+        height: 600px;
+    }
+}
+
+@media (max-height: 600px) {
+    .form {
+        height: 300px;
+    }
+}
+
+.form input {
+    border: 3px rgb(205, 69, 91)solid;
+    height: 30px;
+    width: 300px;
+    margin: 40px auto;
+    display: block;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.form h2 {
+    text-align: center;
+    color: rgb(28, 123, 152);
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* experts section */
+.container {
+    padding-top: 100px;
+}
+
+.container h1 {
+    font-size: 45px;
+    padding-left: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+}
+
+@media (max-width: 840px) {
+    .container h1 {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 840px) {
+    .container h1 {
+        padding-left: 500px;
+    }
+}
+
+.doctors {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.doctors img {
+    width: 290px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    border-radius: 12px;
+}
+
+@media (min-width: 840px) {
+    .doctors img {
+        display: block;
+    }
+}
+
+@media (max-width: 840px) {
+    .doctors img {
+        display: none;
+    }
+}
+
+.doctors h2 {
+    text-align: center;
+    color: rgb(28, 123, 152);
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.doctors p {
+    color: rgb(205, 69, 91);
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+}
+
+.social {
+    cursor: pointer;
+}
+
+/* products section */
+.products {
+    margin: 100px auto;
+    display: block;
+    background-color: aliceblue;
+}
+
+.chitras {
+    display: flex;
+}
+
+.brand {
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    widows: 100%;
+}
+
+.chitras img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    padding-left: 140px;
+    padding-top: 40px;
+    border-radius: 50%;
+}
+
+@media (max-width: 840px) {
+    .chitras img {
+        display: none;
+    }
+}
+
+@media (min-width: 840px) {
+    .chitras img {
+        display: block;
+    }
+}
+
+.products h1 {
+    font-size: 45px;
+    padding-left: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+}
+
+@media (max-width: 840px) {
+    .products h1 {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 840px) {
+    .products h1 {
+        display: block;
+    }
+}
+
+.products h2 {
+    text-align: center;
+    color: rgb(205, 69, 91);
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.products h3 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+.products p {
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* customers section */
+.reviews::before {
+    content: '';
+    position: absolute;
+    background: url('../img/fbg.jpg') center center/cover;
+    display: block;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+}
+
+.customs {
+    display: flex;
+    text-align: center;
+}
+
+.customs img {
+    height: 300px;
+    width: 400px;
+}
+
+.haves img {
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    padding-left: 9px;
+    margin: 23px;
+    display: block;
+    border-radius: 50%;
+
+
+}
+
+@media (max-width: 840px) {
+    .haves img {
+        display: none;
+    }
+}
+
+@media (min-width: 840px) {
+    .haves img {
+        display: block;
+    }
+}
+
+.haves img {
+    filter: blur(2px);
+}
+
+img:hover {
+    filter: none;
+}
+
+.reviews .customs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 45px;
+    padding-left: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28, 123, 152);
+    font-family: 'Baloo Thambi 2', cursive;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+}
+
+@media (max-width: 840px) {
+    .reviews h1 {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 840px) {
+    .reviews h1 {
+        display: block;
+    }
+}
+
+h3 {
+    color: rgb(205, 69, 91);
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: bold;
+}
+
+
+.reviews p {
+    text-align: center;
+    color: rgb(28, 123, 152);
+    font-weight: bold;
+    padding-top: 40px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* last section */
+.last::before {
+    content: '';
+    position: absolute;
+    background: url('../img/last.jpg') center center/cover;
+    display: block;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.last .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.box1 {
+    width: 300px;
+    height: 300px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.box1:hover {
+    width: 600px;
+}
+
+.box1:hover {
+    height: 300px;
+    width: 300px;
+    display: block;
+    background-color: hwb(194 61% 12% / 0.834);
+    border-radius: 20px;
+}
+
+.box1 img {
+    padding-top: 9px;
+    color: rgb(28, 123, 152);
+}
+
+.box1 p {
+    padding-top: 9px;
+    color: rgb(28, 123, 152);
+}
+
+@media (max-width: 840px) {
+    .box1 p {
+        display: none;
+    }
+}
+
+@media (min-width: 840px) {
+    .box1 p {
+        display: block;
+    }
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.box2:hover {
+    width: 600px;
+}
+
+.box2:hover {
+    height: 300px;
+    width: 300px;
+    display: block;
+    background-color: hwb(194 61% 12% / 0.834);
+    border-radius: 20px;
+}
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.box3:hover {
+    width: 600px;
+}
+
+.box3:hover {
+    height: 300px;
+    width: 300px;
+    display: block;
+    background-color: hwb(194 61% 12% / 0.834);
+    border-radius: 20px;
+}
+
+.box4 {
+    width: 300px;
+    height: 300px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.box4:hover {
+    width: 600px;
+}
+
+.box4:hover {
+    height: 300px;
+    width: 300px;
+    display: block;
+    background-color: hwb(194 61% 12% / 0.834);
+    border-radius: 20px;
+}
+
+.last .container h2 {
+    text-align: center;
+    color: rgb(205, 69, 91);
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-shadow: 10px 12px 12px rgb(205, 69, 91), 2px 2px 2px rgb(28, 123, 152);
+    border-radius: 20px;
+}
+
+.box2 ul li {
+    list-style: none;
+    padding: 9px;
+    color: rgb(28, 123, 152);
+}
+
+.box3 input {
+    margin: 50px auto
+}
+
+.box3 .btn {
+    padding-top: 5px;
+}
+
+.box4 .links {
+    padding-top: 30px;
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(28, 123, 152);
+    display: block;
+    margin-top: 10px;
+}
+
+.footer p {
+    padding-top: 10px;
+    text-align: center;
+}
